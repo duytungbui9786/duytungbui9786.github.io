@@ -1,0 +1,110 @@
+.question{
+  width: 100%;
+  background-color: rgb(194, 196, 197);
+  margin: 10px;
+
+}
+.answer{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.topic {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .topic:hover {
+    background-color: #ccc;
+  }
+  
+  .text {
+    padding: 0 18px;
+    background-color: white;
+  }
+/* tabs CSS */
+  .tabs {
+    width: 600px;
+    color: black;
+    border: solid 1px rgb(196, 189, 189);
+    border-radius: 5px 5px 5px 5px;
+  }
+  ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+    border-bottom: rgb(196, 189, 189) 1px solid;
+  }
+  ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    /* border: 1px solid #d5d5de;
+    border-bottom: none; */
+    cursor: pointer;
+  }
+  ul#tabs-nav li:hover,
+  ul#tabs-nav li.active {
+    background-color: rgb(194, 196, 197);
+  }
+  #tabs-nav li a {
+    text-decoration: none;
+    color: rgb(67, 67, 243);
+  }
+  .tab-content {
+    padding: 10px;
+    background-color: #FFF;
+  }
+  
+  /* toast */
+  .alert-container {
+    position: fixed;
+    bottom: 5px;
+    top: 2%;
+    right:10px;
+    width: 400px;
+  }
+  .alert {
+    text-align: right;
+    padding: 13px 50px 20px 15px;
+    font-size: 18px;
+    float: right;
+    background-color: rgb(51, 147, 202);
+    color: rgb(49, 49, 49);
+    border: 1px solid rgb(51, 147, 202);
+    border-radius: 30px;
+    color: rgb(231, 231, 231);
+    font-weight: bold;  
+  }
+  .exit{
+    padding: 10px 30px 20px 10px;
+    position: fixed;
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bolder;
+    right: 1px;
+   
+  }
+  .btn_container{
+    margin: 20px;
+  }
+  .btn{
+    border: solid 1px thistle;
+    background: rgb(0, 163, 35);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }

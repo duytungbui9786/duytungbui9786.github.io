@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arcordion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel='stylesheet'  href='/style.css'/>    
+
+</head>
+<body>
+    <button class="topic" method = "0">Content 1</button>
+    <div class="text">
+      <p>le labo 33...</p>
+    </div>
+    
+    <button class="topic" method = "0">Content 2</button>
+    <div class="text">
+      <p>creed aventus .....</p>
+    </div>
+    
+    <button class="topic" method = "0">Content 3</button>
+    <div class="text">
+      <p>tom ford oud wood ....</p>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('.text').slideUp();
+        $('.topic').click(function(){
+            $method = $(this).attr('method');
+            if($method == 0){
+                $('.topic').next().slideUp();
+                $('.topic').attr('method',0);
+                $(this).next().slideToggle();
+                $(this).attr('method',1);
+            }if($method == 1){
+                $('.topic').attr('method',0);
+                $(this).next().slideUp();
+            }
+        });
+    });
+    </script> 
